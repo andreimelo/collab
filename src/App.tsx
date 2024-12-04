@@ -1,10 +1,10 @@
 import React from 'react';
-import Navigation from '@library/components/Navigation';
+import Routers from '@routes/';
 
 function App(){
 	return (
 		<React.Fragment>
-			<Navigation />
+			<Routers />
 		</React.Fragment>
 	);
 }
