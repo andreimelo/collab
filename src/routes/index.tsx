@@ -7,6 +7,10 @@ const Home = lazy(async () => {
 	const module = await import('../pages/Home');
 	return module;
 });
+const Error404 = lazy(async () => {
+	const module = await import('../pages/Error404');
+	return module;
+});
 
 const Routers: React.FC<Props> = () => {
 	return (
@@ -14,6 +18,7 @@ const Routers: React.FC<Props> = () => {
 			<Suspense fallback={<h1>Loading.....</h1>}>
 				<Routes>
 					<Route path='/' element={<Home />} />
+					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</Suspense>
 		</BrowserRouter>
