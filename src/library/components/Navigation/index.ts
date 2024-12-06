@@ -1,3 +1,3 @@
-import Navigation from '@library/components/Navigation/Navigation.tsx';
+import Navigation from '@library/components/Navigation/Navigation';
 
 export default Navigation;
