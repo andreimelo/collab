@@ -12,12 +12,18 @@ const Error404 = lazy(async () => {
 	return module;
 });
 
+const Login = lazy(async () => {
+	const module = await import('../pages/Login');
+	return module;
+});
+
 const Routers: React.FC<Props> = () => {
 	return (
 		<BrowserRouter>
 			<Suspense fallback={<h1>Loading.....</h1>}>
 				<Routes>
 					<Route path='/' element={<Home />} />
+					<Route path='/login' element={<Login />} />
 					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</Suspense>
