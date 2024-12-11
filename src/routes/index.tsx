@@ -13,7 +13,12 @@ const Error404 = lazy(async () => {
 });
 
 const Login = lazy(async () => {
-	const module = await import('../pages/Login');
+	const module = await import('../pages/authentication/Login');
+	return module;
+});
+
+const CreateAccount = lazy(async () => {
+	const module = await import('../pages/authentication/CreateAccount');
 	return module;
 });
 
@@ -23,7 +28,8 @@ const Routers: React.FC<Props> = () => {
 			<Suspense fallback={<h1>Loading.....</h1>}>
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='/login' element={<Login />} />
+					<Route path='/enter' element={<Login />} />
+					<Route path='/new-user' element={<CreateAccount />} />
 					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</Suspense>

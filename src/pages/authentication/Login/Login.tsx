@@ -5,7 +5,7 @@ interface Props { };
 const Login:React.FC<Props> = () => {
     return (
         <div>
-              Hello Login
+              This is Login Page
         </div>
     )
 }

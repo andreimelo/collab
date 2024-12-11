@@ -3,6 +3,7 @@ import Navigation from '@library/components/Navigation';
 import PostCard from '@library/components/Card';
 import Footer from '@library/components/Footer';
 import LayoutProvider from '@library/layouts/LayoutProvider';
+import './index.css';
 
 interface Prop {}
 
@@ -10,7 +11,7 @@ const Home: React.FC = () => {
 	return (
 		//
 		<LayoutProvider
-			classContainer='bg-gray-100 max-w-8xl mx-auto p-4 sm:px-6 lg:px-8'
+			classContainer='font-family-helveltica bg-gray-100 max-w-8xl mx-auto p-4 sm:px-6 lg:px-8'
 			footerElement={<Footer />}
 			navigationElement={<Navigation />}
 		>
@@ -28,7 +29,7 @@ const Home: React.FC = () => {
 				<main className='lg:w-2/4 mx-4'>
 					<PostCard
 						classCardContainer='border bg-white p-4 rounded-lg mb-4'
-						classTitle='text-xl font-bold m-2'
+						classTitle='font-family-georgia text-xl font-bold m-2'
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
@@ -40,7 +41,7 @@ const Home: React.FC = () => {
 					/>
 					<PostCard
 						classCardContainer='border bg-white p-4 rounded-lg mb-4'
-						classTitle='text-xl font-bold m-2'
+						classTitle='font-family-georgia text-xl font-bold m-2'
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
@@ -52,7 +53,7 @@ const Home: React.FC = () => {
 					/>
 					<PostCard
 						classCardContainer='border bg-white p-4 rounded-lg mb-4'
-						classTitle='text-xl font-bold m-2'
+						classTitle='font-family-georgia text-xl font-bold m-2'
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
