@@ -15,7 +15,7 @@ const Login: React.FC<Props> = () => {
 			<input type='password' className='border p-2 mb-10 h-12 rounded' />
 			<button className='border h-12 rounded bg-blue-600 text-white'>Log in</button>
 			<hr className='my-10' />
-			<div>
+			<div className='text-center'>
 				New to Collab Community?{' '}
 				<Link to='/new-user' className='text-blue-600 underline'>
 					Create account

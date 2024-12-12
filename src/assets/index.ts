@@ -1,3 +1,6 @@
 export { default as CollabLogo } from '@assets/CollabLogo.svg';
 export { default as Hammer3D } from '@assets/3diconsHammer.svg';
 export { default as DummyAvatar } from '@assets/Dummy.png';
+export { default as Github } from '@assets/Github.svg';
+export { default as Fb } from '@assets/Fb.svg';
+export { default as Google } from '@assets/Google.svg';
