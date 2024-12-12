@@ -6,7 +6,7 @@ interface Props {}
 
 const Error404: React.FC<Props> = () => {
 	return (
-		<div className='min-h-screen flex flex-col items-center justify-center '>
+		<div className='min-h-screen flex flex-col items-center justify-center'>
 			<div className='flex mb-11'>
 				<h1 className='text-6xl font-bold text-gray-800'>404 </h1>
 				<img src={Hammer3D} className='logo' alt='Hammer3D Icon' />
