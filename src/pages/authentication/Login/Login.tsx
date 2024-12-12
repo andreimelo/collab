@@ -8,7 +8,9 @@ const Login: React.FC<Props> = () => {
 	return (
 		// temporary - need refactor
 		<div className='min-h-screen flex place-self-center flex-col justify-center'>
-			<img src={CollabLogo} className='w-32 mb-7 mx-auto' alt='Vite logo' />
+			<Link to='/' className='text-blue-600 underline'>
+				<img src={CollabLogo} className='w-32 mb-7 mx-auto' alt='Collab logo' />
+			</Link>
 			<label className='mb-2'>Email</label>
 			<input type='text' className='border p-2 mb-10 h-12 rounded' />
 			<label className='mb-2'>Password</label>

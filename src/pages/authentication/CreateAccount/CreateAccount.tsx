@@ -8,7 +8,9 @@ const CreateAccount: React.FC<Props> = () => {
 	return (
 		// temporary - need refactor
 		<div className='min-h-screen flex place-self-center flex-col justify-center'>
-			<img src={CollabLogo} className='w-32 mb-10 mx-auto' alt='Vite logo' />
+			<Link to='/' className='text-blue-600 underline'>
+				<img src={CollabLogo} className='w-32 mb-7 mx-auto' alt='Collab logo' />
+			</Link>
 			<button className='flex p-3 mb-8 border rounded'>
 				<img src={Github} className='w-26 ml-2' alt='Github logo' />
 				<label className='px-16 leading-loose'>Sign up with Github</label>
