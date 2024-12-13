@@ -19,7 +19,7 @@ const Home: React.FC = () => {
 			<div className='flex flex-col lg:flex-row'>
 				<aside className='border bg-white rounded-lg h-fit lg:w-1/4 p-7 lg:mb-0'>
 					<h2 className='text-xl font-bold mb-2'>Popular Tags</h2>
-					<ul>
+					<ul className='text-gray-600 leading-normal'>
 						<li>#webdev</li>
 						<li>#frontend</li>
 						<li>#backend</li>
@@ -33,7 +33,7 @@ const Home: React.FC = () => {
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
-						classCommentSection='flex px-4'
+						classCommentSection='flex px-4 text-sm text-gray-600'
 						title='If you&#39;re a beginner, definitely check this open source guide. I&#39;ve explained almost everything you need to know.'
 						description=''
 						author='Ash Shoe'
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
-						classCommentSection='flex px-4'
+						classCommentSection='flex px-4 text-sm text-gray-600'
 						title='The best way to write a code.'
 						description=''
 						author='Ash Shoe'
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
-						classCommentSection='flex px-4'
+						classCommentSection='flex px-4 text-sm text-gray-600'
 						title='If you&#39;re a beginner, definitely check this open source guide. I&#39;ve explained almost everything you need to know.'
 						description=''
 						author='Ash Shoe'
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
 				</main>
 				<aside className='border bg-white rounded-lg h-fit lg:w-1/4 p-7 lg:mb-0'>
 					<h2 className='text-xl font-bold mb-2'>Recommended Friends</h2>
-					<ul>
+					<ul className='text-gray-600 leading-normal'>
 						<li>Jane Doe</li>
 						<li>John Smith</li>
 						<li>Michael Johnson</li>
