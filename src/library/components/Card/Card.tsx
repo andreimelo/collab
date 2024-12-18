@@ -1,5 +1,5 @@
 import React from 'react';
-import { DummyAvatar } from '@assets';
+import { DummyAvatar, CommentIcon } from '@assets';
 
 interface Props {
 	classCardContainer: string;
@@ -33,7 +33,14 @@ const Card: React.FC<Props> = ({
 			<div className={classPostSection}>
 				<div className={classCommentSection}>
 					<button className='mr-4'>5 reactions</button>
-					<button>Add Comment</button>
+					<button className='flex mx-3 place-self-center'>
+						<img
+							src={CommentIcon}
+							className='w-5 mx-2 rounded-full'
+							alt='Comment Icon'
+						/>
+						Add Comment
+					</button>
 				</div>
 				<div className={classAvatarContainer}>
 					<div className='mt-4'>
