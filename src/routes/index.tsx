@@ -22,6 +22,11 @@ const CreateAccount = lazy(async () => {
 	return module;
 });
 
+const SignUpWEmail = lazy(async () => {
+	const module = await import('../pages/authentication/CreateAccount/SignUpEmail');
+	return module;
+});
+
 const Routers: React.FC<Props> = () => {
 	return (
 		<BrowserRouter>
@@ -30,6 +35,7 @@ const Routers: React.FC<Props> = () => {
 					<Route path='/' element={<Home />} />
 					<Route path='/enter' element={<Login />} />
 					<Route path='/new-user' element={<CreateAccount />} />
+					<Route path='/new-user/email' element={<SignUpWEmail />} />
 					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</Suspense>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CollabLogo, Github, Fb, Google, Mail } from '@assets';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 interface Props {}
 
@@ -50,6 +50,7 @@ const CreateAccount: React.FC<Props> = () => {
 					Log in
 				</Link>
 			</div>
+			<Outlet />
 		</div>
 	);
 };
