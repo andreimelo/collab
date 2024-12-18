@@ -4,3 +4,6 @@ export { default as DummyAvatar } from '@assets/Dummy.png';
 export { default as Github } from '@assets/Github.svg';
 export { default as Fb } from '@assets/Fb.svg';
 export { default as Google } from '@assets/Google.svg';
+export { default as CommentIcon } from '@assets/CommentIcon.svg';
+export { default as HomeIcon } from '@assets/HomeIcon.svg';
+export { default as BookIcon } from '@assets/BookIcon.svg';
