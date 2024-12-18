@@ -3,6 +3,7 @@ import Navigation from '@library/components/Navigation';
 import PostCard from '@library/components/Card';
 import Footer from '@library/components/Footer';
 import LayoutProvider from '@library/layouts/LayoutProvider';
+import { HomeIcon, BookIcon } from '@assets';
 import './index.css';
 
 interface Prop {}
@@ -17,15 +18,37 @@ const Home: React.FC = () => {
 		>
 			{/* temporary - need refactor */}
 			<div className='flex flex-col lg:flex-row'>
-				<aside className='border bg-white rounded-lg h-fit lg:w-1/4 p-7 lg:mb-0'>
-					<h2 className='text-xl font-bold mb-2'>Popular Tags</h2>
-					<ul className='text-gray-600 leading-normal'>
-						<li>#webdev</li>
-						<li>#frontend</li>
-						<li>#backend</li>
-						<li>#softwareengr</li>
-					</ul>
-				</aside>
+				<div className='lg:w-1/4 lg:mb-0'>
+					<aside className='px-7 pb-7 h-fit'>
+						<ul className='text-gray-600 leading-relaxed'>
+							<li className='flex'>
+								<img
+									src={HomeIcon}
+									className='w-5 mr-3'
+									alt='Home Icon'
+								/>
+								<label>Home</label>
+							</li>
+							<li className='flex'>
+								<img
+									src={BookIcon}
+									className='w-5 mr-3'
+									alt='About Icon'
+								/>
+								<label>About</label>
+							</li>
+						</ul>
+					</aside>
+					<aside className='border bg-white rounded-lg p-7 h-fit'>
+						<h2 className='text-xl font-bold mb-2'>Popular Tags</h2>
+						<ul className='text-gray-600 leading-normal'>
+							<li>#webdev</li>
+							<li>#frontend</li>
+							<li>#backend</li>
+							<li>#softwareengr</li>
+						</ul>
+					</aside>
+				</div>
 				<main className='lg:w-2/4 mx-4'>
 					<PostCard
 						classCardContainer='border bg-white p-4 rounded-lg mb-4'
