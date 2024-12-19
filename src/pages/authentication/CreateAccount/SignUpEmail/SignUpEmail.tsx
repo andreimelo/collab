@@ -6,6 +6,7 @@ interface Props {}
 
 const SignUpEmail: React.FC<Props> = () => {
 	return (
+		// temporary - need refactor
 		<div className='min-h-screen flex place-self-center flex-col justify-center'>
 			<Link to='/' className='text-blue-600 underline'>
 				<img src={CollabLogo} className='w-32 mb-7 mx-auto' alt='Collab logo' />
@@ -21,6 +22,13 @@ const SignUpEmail: React.FC<Props> = () => {
 			<button className='border h-12 rounded bg-blue-600 text-white'>
 				Sign up
 			</button>
+			<hr className='my-10' />
+			<div className='text-center mx-8'>
+				Already have an account?{' '}
+				<Link to='/enter' className='text-blue-600 underline'>
+					Log in
+				</Link>
+			</div>
 		</div>
 	);
 };

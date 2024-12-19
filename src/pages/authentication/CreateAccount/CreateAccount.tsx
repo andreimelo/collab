@@ -1,6 +1,6 @@
 import React from 'react';
 import { CollabLogo, Github, Fb, Google, Mail } from '@assets';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface Props {}
 
@@ -35,14 +35,16 @@ const CreateAccount: React.FC<Props> = () => {
 				/>
 				<label className='px-16 leading-loose'>Sign up with Google</label>
 			</button>
-			<button className='flex p-3 mb-8 border rounded'>
-				<img
-					src={Mail}
-					className='place-self-center w-26 ml-2'
-					alt='Email logo'
-				/>
-				<label className='px-16 leading-loose'>Sign up with Email</label>
-			</button>
+			<Link to='/new-user/email'>
+				<button className='flex p-3 mb-8 border rounded w-full'>
+					<img
+						src={Mail}
+						className='place-self-center w-26 ml-2'
+						alt='Email logo'
+					/>
+					<label className='px-16 leading-loose'>Sign up with Email</label>
+				</button>
+			</Link>
 			<hr className='mb-10' />
 			<div className='text-center'>
 				Already have an account?{' '}
@@ -50,7 +52,6 @@ const CreateAccount: React.FC<Props> = () => {
 					Log in
 				</Link>
 			</div>
-			<Outlet />
 		</div>
 	);
 };
