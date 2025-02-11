@@ -9,7 +9,9 @@ const Navigation: React.FC<Props> = () => {
 		// temporary - need refactor
 		<React.Fragment>
 			<nav className='flex flex-col justify-between border-b lg:flex-row bg-white max-w-8xl mx-auto p-4 sm:px-6 lg:px-8'>
-				<img src={CollabLogo} className='logo' alt='Vite logo' />
+				<Link to='/'>
+					<img src={CollabLogo} className='logo' alt='Vite logo' />
+				</Link>
 				<ul className='flex'>
 					<Link to='/enter'>
 						<li className='p-4'>Login</li>
