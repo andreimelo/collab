@@ -27,6 +27,11 @@ const SignUpWEmail = lazy(async () => {
 	return module;
 });
 
+const UserDashboard = lazy(async () => {
+	const module = await import('../pages/user/LandingDashboard');
+	return module;
+});
+
 const Routers: React.FC<Props> = () => {
 	return (
 		<BrowserRouter>
@@ -36,6 +41,7 @@ const Routers: React.FC<Props> = () => {
 					<Route path='/enter' element={<Login />} />
 					<Route path='/new-user' element={<CreateAccount />} />
 					<Route path='/new-user/email' element={<SignUpWEmail />} />
+					<Route path='/dashboard' element={<UserDashboard />} />
 					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</Suspense>
