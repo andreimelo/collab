@@ -32,6 +32,11 @@ const UserDashboard = lazy(async () => {
 	return module;
 });
 
+const UserEditProfile = lazy(async () => {
+	const module = await import('../pages/user/EditProfile');
+	return module;
+});
+
 const Routers: React.FC<Props> = () => {
 	return (
 		<BrowserRouter>
@@ -42,6 +47,7 @@ const Routers: React.FC<Props> = () => {
 					<Route path='/new-user' element={<CreateAccount />} />
 					<Route path='/new-user/email' element={<SignUpWEmail />} />
 					<Route path='/dashboard' element={<UserDashboard />} />
+					<Route path='/edit-profile' element={<UserEditProfile />} />
 					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</Suspense>

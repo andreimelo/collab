@@ -2,6 +2,7 @@ import React from 'react';
 import LayoutProvider from '@library/layouts/LayoutProvider';
 import Navigation from '@library/components/Navigation';
 import Footer from '@library/components/Footer';
+import { Link } from 'react-router';
 
 interface Props {}
 
@@ -24,7 +25,7 @@ const LandingDashboard: React.FC = () => {
 					<aside className='h-fit'>
 						<ul className='text-gray-600 leading-relaxed'>
 							<li className='flex'>
-								<label>Edit Profile</label>
+								<Link to="/edit-profile"><label>Edit Profile</label></Link>
 							</li>
 							<li className='flex'>
 								<label>Add Experience</label>
