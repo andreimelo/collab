@@ -7,6 +7,11 @@ const Home = lazy(async () => {
 	const module = await import('../pages/Home');
 	return module;
 });
+
+const About = lazy(async () => {
+	const module = await import('../pages/About');
+	return module;
+});
 const Error404 = lazy(async () => {
 	const module = await import('../pages/Error404');
 	return module;
@@ -43,6 +48,7 @@ const Routers: React.FC<Props> = () => {
 			<Suspense fallback={<h1>Loading.....</h1>}>
 				<Routes>
 					<Route path='/' element={<Home />} />
+					<Route path='/about' element={<About />} />
 					<Route path='/enter' element={<Login />} />
 					<Route path='/new-user' element={<CreateAccount />} />
 					<Route path='/new-user/email' element={<SignUpWEmail />} />

@@ -5,6 +5,7 @@ import Footer from '@library/components/Footer';
 import LayoutProvider from '@library/layouts/LayoutProvider';
 import { HomeIcon, BookIcon } from '@assets';
 import './index.css';
+import { Link } from 'react-router';
 
 interface Prop {}
 
@@ -35,7 +36,7 @@ const Home: React.FC = () => {
 									className='w-5 mr-3'
 									alt='About Icon'
 								/>
-								<label>About</label>
+								<Link to='/about'>About</Link>
 							</li>
 						</ul>
 					</aside>
