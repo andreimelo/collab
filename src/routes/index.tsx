@@ -3,42 +3,47 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 interface Props {}
 
-const Home = lazy(async () => {
+const HomePage = lazy(async () => {
 	const module = await import('../pages/Home');
 	return module;
 });
 
-const About = lazy(async () => {
+const AboutPage = lazy(async () => {
 	const module = await import('../pages/About');
 	return module;
 });
-const Error404 = lazy(async () => {
+const Error404Page = lazy(async () => {
 	const module = await import('../pages/Error404');
 	return module;
 });
 
-const Login = lazy(async () => {
+const LoginPage = lazy(async () => {
 	const module = await import('../pages/authentication/Login');
 	return module;
 });
 
-const CreateAccount = lazy(async () => {
+const CreateAccountPage = lazy(async () => {
 	const module = await import('../pages/authentication/CreateAccount');
 	return module;
 });
 
-const SignUpWEmail = lazy(async () => {
+const SignUpWEmailPage = lazy(async () => {
 	const module = await import('../pages/authentication/CreateAccount/SignUpEmail');
 	return module;
 });
 
-const UserDashboard = lazy(async () => {
+const UserDashboardPage = lazy(async () => {
 	const module = await import('../pages/user/LandingDashboard');
 	return module;
 });
 
-const UserEditProfile = lazy(async () => {
+const UserEditProfilePage = lazy(async () => {
 	const module = await import('../pages/user/EditProfile');
+	return module;
+});
+
+const UserPostsPage = lazy(async () => {
+	const module = await import('../pages/user/PostsPage');
 	return module;
 });
 
@@ -47,14 +52,15 @@ const Routers: React.FC<Props> = () => {
 		<BrowserRouter>
 			<Suspense fallback={<h1>Loading.....</h1>}>
 				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/about' element={<About />} />
-					<Route path='/enter' element={<Login />} />
-					<Route path='/new-user' element={<CreateAccount />} />
-					<Route path='/new-user/email' element={<SignUpWEmail />} />
-					<Route path='/dashboard' element={<UserDashboard />} />
-					<Route path='/edit-profile' element={<UserEditProfile />} />
-					<Route path='*' element={<Error404 />} />
+					<Route path='/' element={<HomePage />} />
+					<Route path='/about' element={<AboutPage />} />
+					<Route path='/enter' element={<LoginPage />} />
+					<Route path='/new-user' element={<CreateAccountPage />} />
+					<Route path='/new-user/email' element={<SignUpWEmailPage />} />
+					<Route path='/dashboard' element={<UserDashboardPage />} />
+					<Route path='/posts' element={<UserPostsPage />} />
+					<Route path='/edit-profile' element={<UserEditProfilePage />} />
+					<Route path='*' element={<Error404Page />} />
 				</Routes>
 			</Suspense>
 		</BrowserRouter>
