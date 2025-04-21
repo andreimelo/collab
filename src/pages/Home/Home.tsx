@@ -53,7 +53,7 @@ const Home: React.FC = () => {
 				<main className='lg:w-2/4 mx-4'>
 					<PostCard
 						classCardContainer='border bg-white p-4 rounded-lg mb-4'
-						classTitle='font-family-georgia text-xl font-bold m-2'
+						classTitle='text-xl font-bold m-2'
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
 					/>
 					<PostCard
 						classCardContainer='border bg-white p-4 rounded-lg mb-4'
-						classTitle='font-family-georgia text-xl font-bold m-2'
+						classTitle='text-xl font-bold m-2'
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
 					/>
 					<PostCard
 						classCardContainer='border bg-white p-4 rounded-lg mb-4'
-						classTitle='font-family-georgia text-xl font-bold m-2'
+						classTitle='text-xl font-bold m-2'
 						classDescription='mb-4'
 						classPostSection='flex justify-between mb-7'
 						classAvatarContainer='flex flex-row text-sm text-gray-600'
