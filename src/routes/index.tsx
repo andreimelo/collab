@@ -52,6 +52,11 @@ const UserProfilePage = lazy(async () => {
 	return module;
 });
 
+const UserProfileDetailPage = lazy(async () => {
+	const module = await import('../pages/user/ProfileDetail');
+	return module;
+});
+
 const Routers: React.FC<Props> = () => {
 	return (
 		<BrowserRouter>
@@ -64,6 +69,7 @@ const Routers: React.FC<Props> = () => {
 					<Route path='/new-user/email' element={<SignUpWEmailPage />} />
 					<Route path='/dashboard' element={<UserDashboardPage />} />
 					<Route path='/profile' element={<UserProfilePage />} />
+					<Route path='/profile/:id' element={<UserProfileDetailPage />} />
 					<Route path='/posts' element={<UserPostsPage />} />
 					<Route path='/edit-profile' element={<UserEditProfilePage />} />
 					<Route path='*' element={<Error404Page />} />

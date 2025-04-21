@@ -13,7 +13,7 @@ const EditProfile: React.FC = () => {
 			footerElement={<Footer />}
 			navigationElement={<Navigation />}
 		>
-			<div className='w-fit m-auto'>
+			<div className='w-fit m-auto bg-white p-10'>
 				<label className='text-xl font-bold'>
 					Lets get some information to make your profile stand out.
 				</label>
