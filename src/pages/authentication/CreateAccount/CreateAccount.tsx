@@ -14,10 +14,10 @@ const CreateAccount: React.FC<Props> = () => {
 			<button className='flex p-3 mb-8 border rounded'>
 				<img
 					src={Github}
-					className='place-self-center w-26 ml-2'
+					className='place-self-center w-26 ml-2 cursor-pointer'
 					alt='Github logo'
 				/>
-				<label className='px-16 leading-loose'>Sign up with Github</label>
+				<div className='px-16 leading-loose '>Sign up with Github</div>
 			</button>
 			<button className='flex p-3 mb-8 border rounded'>
 				<img
@@ -25,7 +25,7 @@ const CreateAccount: React.FC<Props> = () => {
 					className='place-self-center w-26 ml-2'
 					alt='Facebook logo'
 				/>
-				<label className='px-16 leading-loose'> Sign up with Facebook</label>
+				<div className='px-16 leading-loose'> Sign up with Facebook</div>
 			</button>
 			<button className='flex p-3 mb-8 border rounded'>
 				<img
@@ -33,7 +33,7 @@ const CreateAccount: React.FC<Props> = () => {
 					className='place-self-center w-26 ml-2'
 					alt='Google logo'
 				/>
-				<label className='px-16 leading-loose'>Sign up with Google</label>
+				<div className='px-16 leading-loose'>Sign up with Google</div>
 			</button>
 			<Link to='/new-user/email'>
 				<button className='flex p-3 mb-8 border rounded w-full'>
@@ -42,7 +42,7 @@ const CreateAccount: React.FC<Props> = () => {
 						className='place-self-center w-26 ml-2'
 						alt='Email logo'
 					/>
-					<label className='px-16 leading-loose'>Sign up with Email</label>
+					<div className='px-16 leading-loose'>Sign up with Email</div>
 				</button>
 			</Link>
 			<hr className='mb-10' />
